@@ -4,11 +4,20 @@ body {
     background-image: url('resources/Background_image.svg');
 }
 
+.title-subtitle {
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #E5E7EB;
+    margin-top: 50px;
+    margin-bottom: -5px;
 }
+
 
 h2 {
     font-size: 1.25rem;
@@ -19,12 +28,49 @@ h2 {
 p {
     font-size: 1rem;
     font-weight: 400;
-    color: #D2D5DA;
+    color: #9DA3AE;
+}
+
+.down-cards {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto; 
+    width: 85%; 
+    margin-top: 60px;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     background-color: #212936;
-    
+    border-radius: 20px;
+    padding: 30px 30px 20px 30px;
+    width: 325px;
+    box-sizing: border-box;
+}
+
+.emoji-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #FCEED8;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.emoji-circle-2 .emoji-circle {
+    background-color: #DEE9FC;
+}
+
+.emoji-circle-3 .emoji-circle {
+    background-color: #FBE5E6;
+}
+
+img {
+    border-radius: 20px;
 }
 
 
@@ -37,5 +83,17 @@ p {
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
     body {
         background-image: url('resources/Background_image@3x.png');
+    }
+}
+
+@media (max-width: 1024px) {
+    .title-subtitle {
+        width: 40%;
+    }
+}
+
+@media (max-width: 640px) {
+    .title-subtitle {
+        width: 100%;
     }
 }
