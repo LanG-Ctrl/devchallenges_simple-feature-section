@@ -1,5 +1,7 @@
 body {
     font-family: 'Outfit', sans-serif;
+    background-color: #121826;
+    background-image: url('resources/Background_image.svg');
 }
 
 h1 {
@@ -23,4 +25,17 @@ p {
 .card {
     background-color: #212936;
     
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        background-image: url('resources/Background_image@2x.png');
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+    body {
+        background-image: url('resources/Background_image@3x.png');
+    }
 }
