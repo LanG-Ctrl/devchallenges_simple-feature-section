@@ -35,7 +35,6 @@ p {
     display: flex;
     flex-direction: row;
     margin: 0 auto; 
-    width: 90%; 
     margin-top: 60px;
     gap: 50px;
     flex-wrap: wrap;
